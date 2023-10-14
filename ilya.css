@@ -1,45 +1,67 @@
+body {
+  border: unset;
+  padding: unset;
+  margin: unset;
+}
+
 .root {
   position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
-  background-image: url('https://i.imgur.com/P8GqrBz.png'),
-    radial-gradient(circle at center, rgb(230, 230, 230), rgb(100, 100, 100));
+  background-image: url("https://i.imgur.com/P8GqrBz.png"), radial-gradient(circle at center, rgb(215, 194, 179), rgb(185, 176, 178));
 }
+
 .values {
   --post-width: 1400px;
   --large-font: calc(var(--post-width) / 7.5);
-  @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  .values {
     --post-width: 1000px;
   }
-  @media screen and (min-width: 1300px) {
+}
+@media screen and (min-width: 1300px) {
+  .values {
     --post-width: 1100px;
   }
-  @media screen and (min-width: 1400px) {
+}
+@media screen and (min-width: 1400px) {
+  .values {
     --post-width: 1200px;
   }
-  @media screen and (min-width: 1500px) {
+}
+@media screen and (min-width: 1500px) {
+  .values {
     --post-width: 1300px;
   }
-  @media screen and (min-width: 1600px) {
+}
+@media screen and (min-width: 1600px) {
+  .values {
     --post-width: 1400px;
   }
 }
+
 .span {
   position: relative;
   width: var(--post-width);
   height: 0;
   margin: 0 auto;
-  padding-top: calc(var(--post-width) * (9 / 16));
+  padding-top: calc(var(--post-width) * 0.5625);
   overflow: visible;
-  @media screen and (max-width: 1199px) {
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1199px) {
+  .span {
     width: 100%;
-    padding-top: calc(100% * (1150 / 625));
-    background-image: url('https://www.rpnation.com/gallery/cache_5c3294dc-0ac2-4aa3-ca1b-374b39a0b5b2-png.37783/full');
-    background-size: 260%;
+    height: 100vh;
+    padding-top: unset;
+    background-image: url("./ilya_masked_waifu2x_noise3_scale4x.png");
+    background-size: auto 100%;
     background-position: 45% 10%;
   }
 }
+
 .image {
   position: absolute;
   width: 100%;
@@ -47,44 +69,52 @@
   left: 0;
   height: 0;
   transform-origin: top left;
-  padding-top: calc(100% * (2053 / 1723));
-  background-image: url('https://www.rpnation.com/gallery/cache_5c3294dc-0ac2-4aa3-ca1b-374b39a0b5b2-png.37783/full');
+  padding-top: 126.4542235711%;
+  background-image: url("./ilya_masked_waifu2x_noise3_scale4x.png");
   background-size: 100%;
-  @media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1199px) {
+  .image {
     display: none;
   }
 }
+
 .header {
   position: absolute;
   height: auto;
   width: auto;
-  font-family: 'Cormorant';
+  font-family: "Cormorant";
   color: #231d1e;
   opacity: 0.9;
   font-size: calc(var(--large-font) * 0.75);
   line-height: 1;
   white-space: nowrap;
   cursor: default;
-  @media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1199px) {
+  .header {
     width: 0;
     height: 0;
     overflow: hidden;
   }
 }
+
 .tabnav {
   position: absolute;
   width: auto;
   line-height: 0.8;
-  font-family: 'Cormorant Unicase';
+  font-family: "Cormorant Unicase";
   font-size: 0.2em;
   cursor: pointer;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
+
 .tab {
   display: inline-block;
 }
+
 .scrollbox {
   display: block;
   width: 100%;
@@ -95,24 +125,32 @@
   flex: 1;
   color: #231d1e;
   font-size: 0.9em;
-  font-family: 'Montserrat';
-  @media screen and (max-width: 1199px) {
+  font-family: "Montserrat";
+}
+@media screen and (max-width: 1199px) {
+  .scrollbox {
     height: auto;
     position: relative;
     padding: 0;
   }
 }
+
 .infotitle {
-  font-family: 'Cormorant';
+  font-family: "Cormorant";
   text-transform: capitalize;
   font-size: 30px;
-  @media screen and (max-width: 1399px) {
+}
+@media screen and (max-width: 1399px) {
+  .infotitle {
     font-size: 25px;
   }
-  @media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1199px) {
+  .infotitle {
     text-align: center;
   }
 }
+
 .inforow {
   display: flex;
   flex-flow: row wrap;
@@ -120,22 +158,27 @@
   align-content: flex-start;
   align-items: stretch;
   overflow: hidden;
-  @media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1199px) {
+  .inforow {
     margin-bottom: 5px;
   }
 }
+
 .infoq {
   flex: 1 0 120px;
   text-transform: capitalize;
-  font-family: 'Cormorant Unicase';
+  font-family: "Cormorant Unicase";
   margin: 0px 2px;
   font-size: 1.11em;
 }
+
 .infor {
   flex: 2 0 120px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin: 0px 2px;
 }
+
 .flexcontent {
   overflow: hidden;
   box-sizing: border-box;
@@ -144,12 +187,15 @@
   flex-flow: column nowrap;
   justify-content: stretch;
   font-size: initial;
-  @media screen and (max-width: 119px) {
+}
+@media screen and (max-width: 119px) {
+  .flexcontent {
     overflow: unset;
     display: unset;
     height: auto;
   }
 }
+
 .line {
   position: relative;
   background-color: #231d1e;
@@ -157,18 +203,24 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .linevertical {
   height: calc(100% - 60px - 10px);
   width: 1px;
   margin: auto 20px;
   flex-flow: column nowrap;
-  @media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1199px) {
+  .linevertical {
     display: none;
   }
 }
+
 .linehorizontal {
   display: none;
-  @media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1199px) {
+  .linehorizontal {
     width: calc(100% - 60px - 10px);
     height: 1px;
     margin: 10px auto;
@@ -176,6 +228,7 @@
     display: flex;
   }
 }
+
 .diamond {
   width: 8px;
   height: 8px;
@@ -183,102 +236,115 @@
   transform-origin: center;
   transform: rotate(45deg);
 }
+
 .alignright {
   text-align: right;
-  @media screen and (min-width: 1199px) {
+}
+@media screen and (min-width: 1199px) {
+  .alignright {
     text-align: left;
   }
 }
+
 .leftindent {
   padding-left: 2ex;
 }
+
 .rightindent {
   padding-right: 2ex;
-  @media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1199px) {
+  .rightindent {
     padding-left: 2ex;
     padding-right: unset;
   }
 }
 
-// Title
 .homecontent {
   position: absolute;
   height: auto;
   width: auto;
-  font-family: 'Cormorant';
+  font-family: "Cormorant";
   color: #231d1e;
   font-size: var(--large-font);
   line-height: 0.7;
   white-space: nowrap;
-  bottom: 7%;
-  left: 42%;
+  bottom: 25%;
+  left: 55%;
   cursor: default;
-  @media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1199px) {
+  .homecontent {
     width: 0;
     height: 0;
     overflow: hidden;
   }
 }
+
 .titletabs {
   position: absolute;
   width: 1.2em;
   height: 0.7em;
-  left: 0;
-  bottom: 0;
-  text-align: right;
+  left: 0%;
+  top: 100%;
+  text-align: left;
 }
+
 .titletab {
   position: relative;
   font-size: calc(var(--large-font) / 6);
   line-height: 0.8;
-  font-family: 'Cormorant Unicase';
+  font-family: "Cormorant Unicase";
   color: #231d1e;
   cursor: pointer;
 }
+
 .homeimganchor {
-  transform: scale(0.7) translate(0, -1%);
+  transform: scale(0.7) translate(0, 1%);
 }
+
 .homeimg {
   animation: 3s ease 1s forwards titleanimation;
 }
+
 @keyframes titleanimation {
   100% {
-    transform: scale(0.7) translate(0, -1%);
+    transform: scale(0.7) translate(0, 1%);
   }
 }
-
-// Essentials
 .essentialscontent {
   position: absolute;
-  top: 15%;
-  left: 40%;
-  bottom: 50%;
-  right: 5%;
+  top: 55%;
+  left: 0%;
+  bottom: 5%;
+  right: 55%;
   display: flex;
   flex-flow: row nowrap;
   background-color: rgba(200, 200, 200, 0.3);
   margin: -15px;
   border: 15px solid rgba(200, 200, 200, 0);
 }
+
 .essentialsbox {
   position: relative;
   height: 100%;
   width: auto;
   flex: 1;
 }
+
 .essentialsimganchor {
-  transform: scale(1.65) translate(-22%, 0%);
+  transform: scale(1.6) translate(-3%, -4%);
 }
+
 .essentialsimg {
   animation: 3s ease 1s forwards essentialsanimation;
 }
+
 @keyframes essentialsanimation {
   100% {
-    transform: scale(1.65) translate(-22%, 0%);
+    transform: scale(1.6) translate(-3%, -4%);
   }
 }
-
-// Persona
 .personacontent {
   position: absolute;
   top: 20%;
@@ -291,117 +357,132 @@
   margin: -15px;
   border: 15px solid rgba(200, 200, 200, 0);
 }
+
 .personabox {
   position: relative;
   height: 100%;
   width: auto;
   flex: 1;
 }
+
 .personaimganchor {
-  transform: scale(1.65) translate(6%, -5%);
+  transform: scale(1.6) translate(19%, -26%);
 }
+
 .personaimg {
   animation: 3s ease 1s forwards personaanimation;
 }
+
 @keyframes personaanimation {
   100% {
-    transform: scale(1.65) translate(6%, -5%);
+    transform: scale(1.6) translate(19%, -26%);
   }
 }
-
-// Physique
 .physiquecontent {
   position: absolute;
   top: 38%;
-  left: 45%;
+  left: 53%;
   bottom: 4%;
-  right: 2%;
+  right: 0%;
   display: flex;
   flex-flow: row nowrap;
   background-color: rgba(200, 200, 200, 0.3);
   margin: -15px;
   border: 15px solid rgba(200, 200, 200, 0);
 }
+
 .physiquebox {
   position: relative;
   height: 100%;
   width: auto;
   flex: 1;
 }
+
 .physiqueimganchor {
-  transform: scale(1.65) translate(-20%, -18.5%);
+  transform: scale(1.65) translate(-46%, -35.5%);
 }
+
 .physiqueimg {
   animation: 3s ease 1s forwards physiqueanimation;
 }
+
 @keyframes physiqueanimation {
   100% {
-    transform: scale(1.65) translate(-20%, -18.5%);
+    transform: scale(1.65) translate(-46%, -35.5%);
   }
 }
-
-// Extra
 .extracontent {
   position: absolute;
-  top: 20%;
-  left: 2%;
+  top: 10%;
+  right: 0%;
   bottom: 10%;
-  right: 60%;
+  left: 60%;
   display: flex;
   flex-flow: row nowrap;
   background-color: rgba(200, 200, 200, 0.3);
   margin: -15px;
   border: 15px solid rgba(200, 200, 200, 0);
 }
+
 .extrabox {
   position: relative;
   height: 100%;
   width: auto;
   flex: 1;
 }
+
 .extraimganchor {
-  transform: scale(1.65) translate(0%, -40%);
+  transform: scale(1.65) translate(-52%, 6%);
 }
+
 .extraimg {
   animation: 3s ease 1s forwards extraanimation;
 }
+
 @keyframes extraanimation {
   100% {
-    transform: scale(1.65) translate(0%, -40%);
+    transform: scale(1.65) translate(-52%, 6%);
   }
 }
-
-// mobile stuff
-.contentmobile {
-  @media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
+  .contentmobile {
     left: 10px;
     right: 10px;
     bottom: 10px;
-    top: 20%;
-    background-color: rgba(200, 200, 200, 0.8);
+    top: 130px;
+    background-color: rgba(200, 200, 200, 0.9);
     margin: 0;
     border: 10px solid transparent;
     display: unset;
     overflow-x: visible;
     overflow-y: scroll;
+    text-align: left;
+  }
+  .contentmobile .flexcontent {
+    height: unset;
+  }
+  .contentmobile * {
+    text-align: left;
   }
 }
+
 .mobiletabset {
   display: none;
   position: absolute;
   top: 10px;
   right: 10px;
   left: 10px;
-  bottom: calc(80% + 10px);
-  background-color: rgba(200, 200, 200, 0.8);
+  height: 85px;
+  background-color: rgba(200, 200, 200, 0.9);
   margin: 0;
   border: 10px solid transparent;
-  font-family: 'Cormorant';
+  font-family: "Cormorant";
   font-size: 3em;
   text-align: center;
 }
-.mobiletabs {
-  @media screen and (max-width: 1199px) {
+
+@media screen and (max-width: 1199px) {
+  .mobiletabs {
     position: relative;
     height: auto;
     font-size: 0.6em;
@@ -411,21 +492,25 @@
     align-items: center;
   }
 }
+
 .mobiletab {
   display: inline-block;
   line-height: 0.8;
-  font-family: 'Cormorant Unicase';
+  font-family: "Cormorant Unicase";
   font-size: 0.7em;
   cursor: pointer;
   margin: 0 5px;
 }
+
 .homecontentmobile {
   display: none;
-  @media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1199px) {
+  .homecontentmobile {
     width: 90%;
     height: auto;
     position: absolute;
-    font-family: 'Cormorant';
+    font-family: "Cormorant";
     font-size: 3em;
     display: flex;
     flex-flow: column nowrap;
@@ -442,3 +527,5 @@
     overflow: hidden;
   }
 }
+
+/*# sourceMappingURL=ilya.css.map */
