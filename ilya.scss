@@ -9,7 +9,6 @@ body {
   border: unset;
   padding: unset;
   margin: unset;
-  margin-bottom: 20px;
 }
 .root {
   position: relative;
@@ -36,6 +35,12 @@ body {
   }
   @media screen and (min-width: 1600px) {
     --post-width: 1400px;
+  }
+  @media screen and (min-width: 1700px) {
+    --post-width: 1500px;
+  }
+  @media screen and (min-width: 1800px) {
+    --post-width: 1600px;
   }
 }
 .span {
@@ -151,6 +156,7 @@ body {
   flex: 2 0 120px;
   font-family: 'Montserrat';
   margin: 0px 2px;
+  margin-bottom: 5px;
 }
 .flexcontent {
   overflow: hidden;
@@ -272,7 +278,7 @@ body {
   right: 61%;
   display: flex;
   flex-flow: row nowrap;
-  background-color: rgba(200, 200, 200, 0.3);
+  background-color: rgba(200, 200, 200, 0.5);
   margin: -15px;
   border: 15px solid rgba(200, 200, 200, 0);
 }
@@ -303,7 +309,7 @@ body {
   right: 49%;
   display: flex;
   flex-flow: row nowrap;
-  background-color: rgba(200, 200, 200, 0.3);
+  background-color: rgba(200, 200, 200, 0.5);
   margin: -15px;
   border: 15px solid rgba(200, 200, 200, 0);
 }
@@ -334,7 +340,7 @@ body {
   right: 0%;
   display: flex;
   flex-flow: row nowrap;
-  background-color: rgba(200, 200, 200, 0.3);
+  background-color: rgba(200, 200, 200, 0.5);
   margin: -15px;
   border: 15px solid rgba(200, 200, 200, 0);
 }
@@ -365,7 +371,7 @@ body {
   left: 60%;
   display: flex;
   flex-flow: row nowrap;
-  background-color: rgba(200, 200, 200, 0.3);
+  background-color: rgba(200, 200, 200, 0.5);
   margin: -15px;
   border: 15px solid rgba(200, 200, 200, 0);
 }
