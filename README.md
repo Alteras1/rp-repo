@@ -1,5 +1,5 @@
 # rp-repo
 
-[Estelle Medina](./estelle.html)
+[Estelle Medina](./estelle)
 
-[Ilya Reyes](./ilya.html)
+[Ilya Reyes](./ilya)
